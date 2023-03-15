@@ -6,6 +6,8 @@
 return {
   -- first key is the mode
   n = {
+   ["<leader>s"] = { name = "Ian" }, 
+  ["<leader>ss"] = { "<Plug>(leap-forward-till)", desc = "Leap Forward" },
     -- second key is the lefthand side of the map
     -- mappings seen under group name "Buffer"
     ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
@@ -25,4 +27,5 @@ return {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
   },
+
 }
