@@ -9,6 +9,11 @@ return {
    ["<leader>s"] = { name = "Ian" }, 
   ["<leader>st"] = { "<Plug>(leap-forward-till)", desc = "Leap Forward" },
   ["<leader>sr"] = { "<Plug>(leap-backward-till)", desc = "Leap Backward" },
+  ["<leader>sz"] = { 
+function()
+  require("zen-mode").toggle()
+end
+    , desc = "Zen Mode" },
     -- second key is the lefthand side of the map
     -- mappings seen under group name "Buffer"
     ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
