@@ -6,14 +6,63 @@
 return {
   -- first key is the mode
   n = {
-   ["<leader>s"] = { name = "Ian" }, 
-  ["<leader>st"] = { "<Plug>(leap-forward-till)", desc = "Leap Forward" },
-  ["<leader>sr"] = { "<Plug>(leap-backward-till)", desc = "Leap Backward" },
-  ["<leader>sz"] = { 
-function()
-  require("zen-mode").toggle()
-end
-    , desc = "Zen Mode" },
+    ["<leader>s"] = { name = "Ian" }, 
+    ["<leader>st"] = { "<Plug>(leap-forward-till)", desc = "Leap Forward" },
+    ["<leader>sr"] = { "<Plug>(leap-backward-till)", desc = "Leap Backward" },
+    ["<leader>sz"] = { 
+      function()
+        require("zen-mode").toggle()
+      end, 
+      desc = "Zen Mode" },
+    ["<leader>a"] = { name = 'Harpoon' },
+    ["<leader>aa"] = {
+      function()
+        require("harpoon.mark").add_file()
+      end,
+      desc = "Add File",
+    },
+    ["<leader>as"] = {
+      function()
+        require("harpoon.ui").toggle_quick_menu()
+      end,
+      desc = "Toggle Quick Menu",
+    },
+    ["<leader>an"] = {
+      function()
+        require("harpoon.ui").nav_file(1)
+      end,
+      desc = "Navigate to File 1",
+    },
+    ["<leader>ae"] = {
+      function()
+        require("harpoon.ui").nav_file(2)
+      end,
+      desc = "Navigate to File 2",
+    },
+    ["<leader>ai"] = {
+      function()
+        require("harpoon.ui").nav_file(3)
+      end,
+      desc = "Navigate to File 3",
+    },
+    ["<leader>ao"] = {
+      function()
+        require("harpoon.ui").nav_file(4)
+      end,
+      desc = "Navigate to File 4",
+    },
+    ["<leader>at"] = {
+      function()
+        require("harpoon.ui").nav_next()
+      end,
+      desc = "Navigate Next",
+    },
+    ["<leader>ar"] = {
+      function()
+        require("harpoon.ui").nav_prev()
+      end,
+      desc = "Navigate Previous",
+    },
     -- second key is the lefthand side of the map
     -- mappings seen under group name "Buffer"
     ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
