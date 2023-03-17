@@ -7,6 +7,7 @@ return {
   -- first key is the mode
   n = {
     ["<leader>s"] = { name = "Ian" }, 
+    ["<leader>sm"] = { "<cmd>Glow<cr>", desc= "Preview Markdown"},
     ["<leader>st"] = { "<Plug>(leap-forward-till)", desc = "Leap Forward" },
     ["<leader>sr"] = { "<Plug>(leap-backward-till)", desc = "Leap Backward" },
     ["<leader>sz"] = { 
