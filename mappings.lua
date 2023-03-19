@@ -14,6 +14,11 @@ return {
     ["<leader>sO"] = {"<cmd>ObsidianYesterday<cr>", desc = "Obsidian Yesterday"},
     ["<leader>sI"] = { ":silent! !sh ~/notes/commit.zsh<cr>", desc = 'Obsidian push'},
     ["<leader>si"] = { ":silent! !sh ~/notes/pull.zsh<cr>", desc = 'Obsidian pull'},
+    ["<leader>su"] = { 
+      function()
+        vim.cmd.UndotreeToggle()
+      end,
+      desc = 'Undotree Toggle'},
     ["<leader>sz"] = { 
       function()
         require("zen-mode").toggle()
