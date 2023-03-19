@@ -10,6 +10,8 @@ return {
     ["<leader>sm"] = { "<cmd>Glow<cr>", desc= "Preview Markdown"},
     ["<leader>st"] = { "<Plug>(leap-forward-till)", desc = "Leap Forward" },
     ["<leader>sr"] = { "<Plug>(leap-backward-till)", desc = "Leap Backward" },
+    ["<leader>so"] = { "<cmd>ObsidianToday<cr>", desc = "Obsidian Today"},
+    ["<leader>sO"] = {"<cmd>ObsidianYesterday<cr>", desc = "Obsidian Yesterday"},
     ["<leader>sz"] = { 
       function()
         require("zen-mode").toggle()
