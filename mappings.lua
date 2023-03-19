@@ -12,6 +12,7 @@ return {
     ["<leader>sr"] = { "<Plug>(leap-backward-till)", desc = "Leap Backward" },
     ["<leader>so"] = { "<cmd>ObsidianToday<cr>", desc = "Obsidian Today"},
     ["<leader>sO"] = {"<cmd>ObsidianYesterday<cr>", desc = "Obsidian Yesterday"},
+    ["<leader>si"] = { ":silent! !sh ~/notes/commit.zsh<cr>", desc = 'Obsidian git'},
     ["<leader>sz"] = { 
       function()
         require("zen-mode").toggle()
