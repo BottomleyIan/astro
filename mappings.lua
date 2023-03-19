@@ -12,6 +12,7 @@ return {
     ["<leader>sr"] = { "<Plug>(leap-backward-till)", desc = "Leap Backward" },
     ["<leader>so"] = { "<cmd>ObsidianToday<cr>", desc = "Obsidian Today"},
     ["<leader>sO"] = {"<cmd>ObsidianYesterday<cr>", desc = "Obsidian Yesterday"},
+    ["<leader>sb"] = {"<cmd>ObsidianBacklinks<cr>", desc = "Obsidian Backlinks"},
     ["<leader>sI"] = { ":silent! !sh ~/notes/commit.zsh<cr>", desc = 'Obsidian push'},
     ["<leader>si"] = { ":silent! !sh ~/notes/pull.zsh<cr>", desc = 'Obsidian pull'},
     ["<leader>su"] = { 
