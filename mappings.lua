@@ -4,6 +4,19 @@
 -- lower level configuration and more robust one. (which-key will
 -- automatically pick-up stored data by this setting.)
 return {
+  v = {
+    ["<leader>s"] = { name = "Ian" }, 
+    ["<leader>sm"] = { "<cmd>Glow<cr>", desc= "Preview Markdown"},
+    ["<leader>st"] = { "<Plug>(leap-forward-till)", desc = "Leap Forward" },
+    ["<leader>sr"] = { "<Plug>(leap-backward-till)", desc = "Leap Backward" },
+    ["<leader>so"] = { "<cmd>ObsidianToday<cr>", desc = "Obsidian Today"},
+    ["<leader>sO"] = {"<cmd>ObsidianYesterday<cr>", desc = "Obsidian Yesterday"},
+    ["<leader>sb"] = {"<cmd>ObsidianBacklinks<cr>", desc = "Obsidian Backlinks"},
+    ["<leader>sf"] = {"<cmd>ObsidianFollowLink<cr>", desc = "Obsidian Follow Link"},
+    ["<leader>sF"] = {"<cmd>ObsidianLinkNew<cr>", desc = "Obsidian New Link"},
+    ["<leader>sI"] = { ":silent! !sh ~/notes/commit.zsh<cr>", desc = 'Obsidian push'},
+    ["<leader>si"] = { ":silent! !sh ~/notes/pull.zsh<cr>", desc = 'Obsidian pull'},
+  },
   -- first key is the mode
   n = {
     ["<leader>s"] = { name = "Ian" }, 
@@ -13,6 +26,8 @@ return {
     ["<leader>so"] = { "<cmd>ObsidianToday<cr>", desc = "Obsidian Today"},
     ["<leader>sO"] = {"<cmd>ObsidianYesterday<cr>", desc = "Obsidian Yesterday"},
     ["<leader>sb"] = {"<cmd>ObsidianBacklinks<cr>", desc = "Obsidian Backlinks"},
+    ["<leader>sf"] = {"<cmd>ObsidianFollowLink<cr>", desc = "Obsidian Follow Link"},
+    ["<leader>sF"] = {"<cmd>ObsidianLinkNew<cr>", desc = "Obsidian New Link"},
     ["<leader>sI"] = { ":silent! !sh ~/notes/commit.zsh<cr>", desc = 'Obsidian push'},
     ["<leader>si"] = { ":silent! !sh ~/notes/pull.zsh<cr>", desc = 'Obsidian pull'},
     ["<leader>su"] = { 
