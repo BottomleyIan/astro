@@ -77,6 +77,30 @@ return {
       end,
       desc = "Navigate to File 4",
     },
+    ["<leader>ah"] = {
+      function()
+        require("harpoon.ui").nav_file(5)
+      end,
+      desc = "Navigate to File 5",
+    },
+    ["<leader>a,"] = {
+      function()
+        require("harpoon.ui").nav_file(6)
+      end,
+      desc = "Navigate to File 6",
+    },
+    ["<leader>a."] = {
+      function()
+        require("harpoon.ui").nav_file(7)
+      end,
+      desc = "Navigate to File 7",
+    },
+    ["<leader>a/"] = {
+      function()
+        require("harpoon.ui").nav_file(8)
+      end,
+      desc = "Navigate to File 8",
+    },
     ["<leader>at"] = {
       function()
         require("harpoon.ui").nav_next()
